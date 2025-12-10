@@ -73,7 +73,10 @@ Not sure I should keep the configuration of quartz on the same repository... why
 
 I think I would version also the quartz project as I am adding more and more customisations and it is better to store them more safely than in an old Mac.
 
-
 ## Step 6. Recap
 I have a selection of my Obsidian notes live at https://nina4github.github.io 🎉
 I have the very basic design from the default theme of Quartz - changed a couple of basic details in `quartz.config.ts` like _PageTitle_ and added a _description_ 
+
+
+And then I actually changed the approach, created a new repo, synchronised all quartz in it and then created a github action to publish the content to GitHub pages as described here https://notes.nicolevanderhoeven.com/How+to+publish+Obsidian+notes+with+Quartz+on+GitHub+Pages
+https://quartz.jzhao.xyz/hosting#github-pages
