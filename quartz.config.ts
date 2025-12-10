@@ -8,8 +8,8 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
-    pageTitleSuffix: "",
+    pageTitle: "In the corner",
+    pageTitleSuffix: "Ideas and Learnings from 10 years and counting of Building Digital Products",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -73,7 +73,10 @@ const config: QuartzConfig = {
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
     ],
-    filters: [Plugin.RemoveDrafts()],
+    filters: [
+      Plugin.RemoveDrafts(), // Uncomment to remove drafts
+      Plugin.ExplicitPublish() // Uncomment to only publish notes with `publish: true` in frontmatter
+    ],
     emitters: [
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
